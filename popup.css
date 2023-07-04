@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 5px 15px 15px 15px;
+    width: 250px;
+    user-select: none;
+}
+#title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0px;
+}
+#title h1 {
+    text-align: center;
+    color: #0EA15D;
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#title img {
+    height: 24px; /* Same height as text */
+}
+.class {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5px 0;
+    padding: 5px 8px 5px 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.class input {
+    flex: 1;
+    margin-right: 4px;
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    background: #f3f3f3;
+    user-select: auto;
+}
+
+.class input:focus {
+    border-color: #0EA15D;
+    outline: none;
+}
+
+.class img {
+    cursor: pointer;
+    margin-left: 5px;
+    transition: all 0.3s ease;
+    width: 20px;
+    height: 20px;
+}
+
+.class img:hover {
+    transform: scale(1.1);
+}
+
+.class img.delete-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.class img.edit-icon {
+    width: 20px;
+    height: 20px;
+}
+
+#new-class {
+    margin-bottom: 10px;
+    display:flex;
+    justify-content:space-between
+
+}
+
+#new-class input {
+    width: calc(100% - 55px);
+    padding: 5px;
+    border-radius: 5px 0px 0px 5px;
+    border: 1px solid #ccc;
+    box-shadow: 0px 1px 5px rgba(0,0,0,0.1);
+    transition: all 0.3s ease; /* Added this line */
+}
+
+#new-class input:focus,
+#new-class input:hover { /* Added this line */
+    border-color: #0EA15D;
+    outline: none;
+}
+
+#add-class {
+    background-color: #0EA15D; /* Green */
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 0px 5px 5px 0px;
+    transition: all 0.3s ease; /* Added this line */
+
+}
+
+#add-class:hover { /* Added this line */
+    background-color: #10BA6C;
+}
